@@ -61,10 +61,13 @@ body {
 }
 
 #result {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   position: fixed;
-  top: 10%;
-  left: 10%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 3%;
+  transform: translate(100%, 50%);
   height: 250px;
   width: 400px;
   background-color: #171717;
@@ -73,6 +76,7 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
+
 }
 
 #show-time {
