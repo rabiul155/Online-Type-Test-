@@ -22,6 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
+  padding: 15px;
   font-size: 25px;
   border-radius: 15px;
   background: rgb(255, 255, 255);
@@ -37,9 +38,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 2rem;
   color: white;
-  font-size: 32px;
+  font-size: 30px;
   background-color: #171717;
   border: 2px solid #9dffad;
   border-radius: 15px;
@@ -153,7 +154,7 @@ button {
   text-align: center;
   padding: 10px 20px;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   width: 300px;
   height: 50px;
@@ -170,7 +171,7 @@ button {
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .card {
@@ -178,7 +179,8 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -212,6 +214,38 @@ button {
   .card {
     flex-direction: column;
   }
+
+
+
+  #display {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 1rem;
+    color: white;
+    font-size: 15px;
+    background-color: #171717;
+    border: 2px solid #9dffad;
+    border-radius: 15px;
+  }
+
+  #question {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(92.49deg,
+        rgba(255, 255, 255, 0.1) 0.18%,
+        rgba(255, 255, 255, 0.05) 99.85%);
+    backdrop-filter: blur(5px);
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -221,6 +255,8 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 10px;
+
   }
 
 
