@@ -116,9 +116,13 @@ const start = () => {
     if (count == 0) {
       // adding this line 0 removed
       countdownOverlay.textContent = '';
+      // adding this line for hiding countdown window
+      countdownOverlay.style.display = "none";
+
+      // countdownOverlay.removeAttribute("countdown");
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "flex";
+
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
