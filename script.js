@@ -71,6 +71,8 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = parseInt((finishTime - startTime) / 1000);
+
+
   // typing speed count 
   const totalWord = questionText.split(' ').length;
   const speed = parseInt(totalWord / (timeTaken / 60));
