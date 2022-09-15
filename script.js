@@ -71,6 +71,11 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = parseInt((finishTime - startTime) / 1000);
+  // typing speed count 
+  const totalWord = questionText.split(' ').length;
+  const speed = parseInt(totalWord / (timeTaken / 60));
+
+
 
   // show result modal
   resultModal.innerHTML = "";
@@ -85,6 +90,7 @@ const gameOver = () => {
     <h1 >Finished!</h1>
     <p style="margin-top: 10px;">You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+    <p> Your typing speed <span class="bold">${speed}</span> wpm</p>
     <button style="margin-top: 15px;" onclick="closeModal()">Close</button>
   `;
 
