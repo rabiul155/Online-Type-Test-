@@ -61,21 +61,19 @@ body {
 }
 
 #result {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   position: fixed;
-  top: 0%;
-  left: 3%;
-  transform: translate(100%, 50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 250px;
-  width: 400px;
+  max-width: 400px;
   background-color: #171717;
   border-radius: 15px;
   border: 2px solid #9dffad;
   color: white;
   text-align: center;
   padding: 2rem;
+
 
 }
 
@@ -152,7 +150,9 @@ button {
 }
 
 #histories {
-  display: flex;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -196,4 +196,16 @@ button {
   .card {
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #histories {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
 }
